@@ -1,0 +1,8 @@
+// MIXIN
+// I've included a parameter $direction with a default value of row. Because in CSS Flexbox, the flex-direction property determines the direction in which the flex items are laid out in the flex container. It can take values like row, column, row-reverse, or column-reverse.
+@mixin flexCenter($direction: row) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}

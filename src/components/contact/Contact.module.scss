@@ -1,0 +1,15 @@
+@use "../../scss/abstracts/" as *;
+
+.dark {
+  .contact {
+    background-color: black;
+  }
+
+  a {
+    color: white;
+  }
+
+  .darkText {
+    color: white;
+  }
+}

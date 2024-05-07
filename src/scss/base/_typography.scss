@@ -1,0 +1,206 @@
+@use "../abstracts/" as *;
+
+// section Home for title
+
+.home-title {
+  font-size: $font-size-2;
+  margin-bottom: 2rem;
+  font-weight: $font-weight-bold;
+  background: linear-gradient(120deg, #221912, #d8bbaa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.home-subtitle {
+  position: relative;
+  font-size: $font-size-6;
+  padding-left: 5.4rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  animation: changeColor 8s infinite, moveText 5s infinite;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: $color-black;
+    left: 0;
+    top: 1rem;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: #907c6e;
+  }
+  25% {
+    color: #a8edea;
+  }
+  50% {
+    color: #fed6e3;
+  }
+  75% {
+    color: #d5a587;
+  }
+  100% {
+    color: #4a3f38;
+  }
+}
+
+@keyframes moveText {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+// section for about title
+
+.about_title {
+  font-size: $font-size-8;
+  font-weight: $font-weight-5;
+}
+
+.about_subtitle {
+  font-size: $font-size-9;
+}
+
+// section start about + info for title
+
+.section_title {
+  text-align: center;
+  font-size: $font-size-3;
+  color: $color-darkGray;
+  margin-top: 3rem;
+}
+
+.section_subtitle {
+  display: block;
+  text-align: center;
+  font-size: $font-size-4;
+  color: $color-gray;
+  margin-bottom: 2rem;
+}
+
+// section skills for title
+
+.skills-title {
+  font-size: $font-size-10;
+  font-weight: $font-weight-6;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: $font-size-11;
+  font-weight: $font-weight-3;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section-subtitle {
+  display: block;
+  text-align: center;
+  font-size: $font-size-4;
+  color: $color-gray;
+  margin-bottom: 2rem;
+}
+
+// section service for title
+
+.section__title {
+  font-size: $font-size-2;
+  margin-bottom: 1rem;
+  font-weight: $font-weight-4;
+  text-align: center;
+}
+
+.section__subtitle {
+  display: block;
+  text-align: center;
+  font-size: $font-size-4;
+  color: $color-gray;
+  margin-bottom: 2rem;
+}
+
+// section qualification for title
+
+.section--title {
+  text-align: center;
+  font-size: $font-size-3;
+  color: $color-darkGray;
+  margin-top: 3rem;
+}
+
+.section--subtitle {
+  display: block;
+  text-align: center;
+  font-size: $font-size-4;
+  color: $color-gray;
+  margin-bottom: 2rem;
+}
+
+// section portfolio for title
+
+.section---title {
+  text-align: center;
+  font-size: $font-size-3;
+  color: $color-darkGray;
+  margin-bottom: 1rem;
+}
+
+.section---subtitle {
+  display: block;
+  text-align: center;
+  font-size: $font-size-4;
+  color: $color-gray;
+  margin-bottom: 2rem;
+}
+
+.portfolio_title {
+  font-size: $font-size-4;
+  margin-top: 1rem;
+  color: $color-darkGray;
+  text-align: center;
+}
+
+// section contact for title
+
+.section____title {
+  text-align: center;
+  font-size: $font-size-3;
+  color: $color-darkGray;
+  margin-top: 3rem;
+}
+
+.section____subtitle {
+  display: block;
+  text-align: center;
+  font-size: $font-size-4;
+  color: $color-gray;
+  margin-bottom: 2rem;
+  animation: waveAnimation 2.5s infinite;
+}
+
+.contact---title {
+  text-align: center;
+  font-size: $font-size-7;
+  font-weight: $font-weight-4;
+  margin-bottom: 2rem;
+}
+
+// section footer for title
+
+.footer_title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: $font-size-2;
+  font-weight: $font-weight-3;
+}

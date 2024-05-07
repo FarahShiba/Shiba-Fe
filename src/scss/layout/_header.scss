@@ -1,0 +1,49 @@
+@use "../abstracts/" as *;
+@use "./navigation" as *;
+
+// header
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: $color-black;
+
+  // change background header
+  .scroll-header {
+    box-shadow: 0 -1px 4px $color-boxShadow;
+  }
+
+  // show menu
+  .show-menu {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+
+    & {
+      transition: transform 0.3s ease;
+      position: fixed;
+      z-index: 1000;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .header {
+      top: 0;
+      bottom: auto;
+      position: fixed;
+    }
+
+    .nav-menu {
+      position: static;
+      background-color: transparent;
+      box-shadow: none;
+      padding: 5px 20px;
+    }
+  }
+}
+
+// Header finished

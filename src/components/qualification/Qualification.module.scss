@@ -1,0 +1,79 @@
+@use "../../scss/abstracts/" as *;
+
+.qualification {
+  &.dark {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    a {
+      color: white;
+    }
+
+    .section--title,
+    .section--subtitle {
+      color: white !important;
+    }
+
+    .darkText {
+      color: white !important;
+    }
+  }
+
+  &.light {
+    background-color: white;
+    color: black;
+
+    .section--title,
+    .section--subtitle {
+      color: black;
+    }
+
+    a {
+      color: black;
+    }
+  }
+}
+
+// @use "../../scss/abstracts/" as *;
+
+// .dark {
+//   .qualification {
+//     background-color: black;
+//     color: white;
+//     width: 100vw;
+//     margin: 0;
+//     padding: 0;
+//     overflow-x: hidden;
+
+//     a {
+//       color: white;
+//     }
+
+//     .section--title,
+//     .section--subtitle {
+//       color: white !important;
+//     }
+
+//     .darkText {
+//       color: white !important;
+//     }
+//   }
+
+//   &.light {
+//     background-color: white;
+//     color: black;
+
+//     .section--title,
+//     .section--subtitle {
+//       color: black;
+//     }
+
+//     a {
+//       color: black;
+//     }
+//   }
+// }

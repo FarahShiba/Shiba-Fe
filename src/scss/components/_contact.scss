@@ -1,0 +1,74 @@
+@use "../abstracts/" as *;
+
+// contact start
+
+.contact {
+  padding: 3.5rem 0;
+
+  &_container {
+    padding-bottom: 3rem;
+
+    &_content {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .contact_card {
+    border: 1px solid $color-black;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.75rem;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: $color-lightWhite;
+    }
+
+    &-title,
+    &-data {
+      font-size: $font-size-12;
+    }
+  }
+  &_form {
+    max-width: 360px;
+    margin: auto;
+  }
+
+  .btn-custom {
+    background-color: $color-darkBrown;
+    border-color: $color-darkBrown;
+
+    &:hover {
+      background-color: $color-lightBrown;
+      border-color: $color-lightBrown;
+    }
+  }
+  @keyframes waveAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-8deg);
+    }
+    60% {
+      transform: rotate(14deg);
+    }
+    80% {
+      transform: rotate(-4deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+}
+
+// contact finish

@@ -1,0 +1,55 @@
+@use "../abstracts/" as *;
+
+// services start
+
+.services {
+  padding: 5.5rem 0;
+
+  &_content {
+    @include flexCenter(column);
+    background: $color-white;
+    border-radius: 10px;
+    box-shadow: 0 8px 6px $color-brand;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin: 20px;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &_icon {
+      font-size: $font-size-3;
+      color: $color-black;
+    }
+  }
+
+  &_title {
+    font-size: $font-size-7;
+    font-weight: $font-weight-4;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  &_modal-services {
+    row-gap: 0.75rem;
+
+    &services_modal-service {
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+    }
+
+    &-icon {
+      color: $color-darkGray;
+      font-size: $font-size-15;
+    }
+
+    &-info {
+      font-size: $font-size-16;
+    }
+  }
+}
+
+// services finish

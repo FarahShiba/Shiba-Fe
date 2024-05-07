@@ -1,0 +1,30 @@
+@use "../../scss/abstracts/" as *;
+
+.dark {
+  .header {
+    background-color: black !important;
+    width: 100%;
+    margin-left: 0 auto;
+    padding: 0 auto;
+  }
+
+  .navLink {
+    color: burlywood;
+
+    &:hover {
+      color: white;
+    }
+
+    &:focus {
+      color: brown;
+    }
+  }
+
+  a {
+    color: white;
+  }
+
+  .darkText {
+    color: white;
+  }
+}

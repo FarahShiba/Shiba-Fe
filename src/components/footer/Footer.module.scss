@@ -1,0 +1,15 @@
+@use "../../scss/abstracts/" as *;
+
+.dark {
+  .footer {
+    background-color: black;
+  }
+
+  a {
+    color: white;
+  }
+
+  .darkText {
+    color: white !important;
+  }
+}

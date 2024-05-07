@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+%btn {
+  font-size: 1.9rem;
+}
+
+.toggleContainer {
+  display: inline-block;
+
+  .lightToggle {
+    @extend %btn;
+    color: $color-white;
+  }
+
+  .darkToggle {
+    @extend %btn;
+    color: $color-black;
+  }
+}

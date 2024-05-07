@@ -1,0 +1,49 @@
+@use "../abstracts/" as *;
+
+// start skills
+
+.skills {
+  padding: 4.9rem 0;
+
+  &-content {
+    background-color: $color-white;
+    border: 1px solid $color-black;
+    padding: 2rem 3rem;
+    border-radius: 1.5rem;
+  }
+
+  &-box {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+  }
+
+  &-group {
+    display: grid;
+    grid-template-columns: repeat(2, minimax(0, 1fr));
+    row-gap: 0.75rem;
+  }
+
+  &-data {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+
+  .bx-badge-check {
+    font-size: $font-size-12;
+    color: $color-black;
+  }
+
+  &-name {
+    font-size: $font-size-13;
+    font-weight: $font-weight-4;
+    line-height: 18px;
+  }
+
+  &-level {
+    font-size: $font-size-14;
+  }
+}
+
+// skills finish

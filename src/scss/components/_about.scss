@@ -1,0 +1,48 @@
+@use "../abstracts/" as *;
+
+// start About + Info
+
+.about {
+  padding: 0.1rem;
+
+  &_container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 8rem;
+  }
+
+  &_img {
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+  }
+
+  &_info {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    margin: 7.8rem auto 0;
+  }
+
+  &_box {
+    background-color: $color-white; //i want change color but later
+    border: 1px solid $color-black;
+    border-radius: 0.85rem;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  &_icon {
+    font-size: $font-size-7;
+    color: $color-brown;
+    margin-bottom: 6px;
+  }
+
+  &_description {
+    padding: 0 3rem 0 0;
+    padding-top: 2rem;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+}
+
+// finish about + info

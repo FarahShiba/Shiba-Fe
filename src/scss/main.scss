@@ -1,0 +1,26 @@
+// MAIN SCSS FILE
+
+// -- base imports
+// -- component imports
+// -- layout imports
+
+@use "./abstracts/" as *;
+
+// base imports
+@use "./base/typography";
+
+// component
+@use "./components/home";
+@use "./components/about";
+@use "./components/skills";
+@use "./components/services";
+@use "./components/qualification";
+@use "./components/portfolio";
+@use "./components/contact";
+@use "./components/button";
+@use "./components/singleToggler";
+
+// layout
+@use "./layout/header";
+@use "./layout/footer";
+@use "./layout/navigation";
