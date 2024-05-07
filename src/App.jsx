@@ -14,7 +14,7 @@ import "boxicons/css/boxicons.min.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Shiba-Fe">
       <Routes>
         <Route
           path="/"
