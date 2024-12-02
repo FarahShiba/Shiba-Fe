@@ -31,7 +31,7 @@ const Portfolio = () => {
     {
       id: 2,
       image: Work2,
-      title: "Web Design",
+      title: "Music App",
       category: "Web",
       // linkType: "github",
       livePreviewUrl: "https://music-app-pi-self.vercel.app/",
@@ -59,7 +59,7 @@ const Portfolio = () => {
     {
       id: 5,
       image: Work5,
-      title: "Web Design",
+      title: "Restaurant Food App",
       category: "Web",
       livePreviewUrl: "https://restaurantfood-1.onrender.com",
     },
@@ -67,7 +67,7 @@ const Portfolio = () => {
     {
       id: 6,
       image: Work6,
-      title: "Web Design",
+      title: "Fashion Design App",
       category: "Web",
       livePreviewUrl: "https://fashionbrand-1.onrender.com",
     },
@@ -75,7 +75,7 @@ const Portfolio = () => {
     {
       id: 7,
       image: Work7,
-      title: "Web Design (wordpress)",
+      title: "Avvaitamil school (wordpress)",
       category: "Web",
       livePreviewUrl: "https://avvaitamilpalli.com/",
     },
