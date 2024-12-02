@@ -3,9 +3,12 @@ import { Tab, Tabs, Card, Row, Col } from "react-bootstrap";
 
 // image imports from assets
 import Work1 from "../../assets/marketing.jpg";
-import Work2 from "../../assets/webdes.png";
-import Work3 from "../../assets/Logo Restaurant.png";
+import Work2 from "../../assets/Screenshot 2024-12-02 at 7.19.18 pm.png";
+// import Work3 from "../../assets/Logo Restaurant.png";
 import Work4 from "../../assets/ui.png";
+import Work5 from "../../assets/Screenshot 2024-12-02 at 7.27.11 pm.png";
+import Work6 from "../../assets/work6.png";
+import Work7 from "../../assets/work7.png";
 
 import style from "./Portfolio.module.scss";
 import useTheme from "../../hooks/useTheme";
@@ -30,18 +33,18 @@ const Portfolio = () => {
       image: Work2,
       title: "Web Design",
       category: "Web",
-      linkType: "github",
-      livePreviewUrl: "https://example-branding-live.com",
+      // linkType: "github",
+      livePreviewUrl: "https://music-app-pi-self.vercel.app/",
     },
 
-    {
-      id: 3,
-      image: Work3,
-      title: "Create logo",
-      category: "Design",
-      linkType: "adobe",
-      livePreviewUrl: "https://example-branding-live.com",
-    },
+    // {
+    //   id: 3,
+    //   image: Work3,
+    //   title: "Create logo",
+    //   category: "Design",
+    //   linkType: "adobe",
+    //   livePreviewUrl: "https://example-branding-live.com",
+    // },
 
     {
       id: 4,
@@ -49,7 +52,32 @@ const Portfolio = () => {
       title: "Ui/Ux",
       category: "design",
       linkType: "figma",
-      livePreviewUrl: "https://example-branding-live.com",
+      livePreviewUrl:
+        "https://www.figma.com/proto/S7IZ2nIWbt6cke02yF5xh9/avvaitamilpalli?node-id=1001-8976&starting-point-node-id=1001%3A8976",
+    },
+
+    {
+      id: 5,
+      image: Work5,
+      title: "Web Design",
+      category: "Web",
+      livePreviewUrl: "https://restaurantfood-1.onrender.com",
+    },
+
+    {
+      id: 6,
+      image: Work6,
+      title: "Web Design",
+      category: "Web",
+      livePreviewUrl: "https://fashionbrand-1.onrender.com",
+    },
+
+    {
+      id: 7,
+      image: Work7,
+      title: "Web Design (wordpress)",
+      category: "Web",
+      livePreviewUrl: "https://avvaitamilpalli.com/",
     },
   ];
 
@@ -68,11 +96,11 @@ const Portfolio = () => {
       case "gdrive":
         return "https://drive.google.com/drive/u/0/folders/1qvnXliHUiITWPOypRqt02ROwSoBxrWwo";
       case "figma":
-        return "https://www.figma.com/file/I47WhrUvVYJIupgUjsmiun/Untitled?type=design&node-id=0-1&mode=design&t=zehvcqvNlNYW7L2h-0";
+        return "https://www.figma.com/design/S7IZ2nIWbt6cke02yF5xh9/avvaitamilpalli?node-id=22-4&node-type=canvas&t=wxPw62l5UzfGSEqg-0";
       case "adobe":
         return "https://www.adobe.com/products/illustrator.html";
       default:
-        return "https://github.com/FarahShiba?tab=repositories";
+        return "";
     }
   };
 
@@ -85,7 +113,7 @@ const Portfolio = () => {
       case "adobe":
         return "Checkout Adobe";
       default:
-        return "Checkout GitHub";
+        return "";
     }
   };
 
@@ -125,23 +153,26 @@ const Portfolio = () => {
                           {project.title}
                         </Card.Title>
                         <div className="card_actions">
-                          {/* Only show Live Preview if the title is not "Branding" */}
-                          {project.title !== "Branding" && (
-                            <Card.Link
-                              target="_blank"
-                              href={project.livePreviewUrl}
-                              className="btn_ btn-live"
-                            >
-                              Live Preview
-                            </Card.Link>
-                          )}
-                          <Card.Link
-                            target="_blank"
-                            href={getLinkURL(project.linkType)}
-                            className={`btn_ btn-all btn-${project.linkType}`}
-                          >
-                            {getButtonText(project.linkType)}
-                          </Card.Link>
+                          {project.title !== "Branding" &&
+                            project.livePreviewUrl && (
+                              <Card.Link
+                                target="_blank"
+                                href={project.livePreviewUrl}
+                                className="btn_ btn-live"
+                              >
+                                Live Preview
+                              </Card.Link>
+                            )}
+                          {project.linkType !== "github" &&
+                            project.linkType && (
+                              <Card.Link
+                                target="_blank"
+                                href={getLinkURL(project.linkType)}
+                                className={`btn_ btn-all btn-${project.linkType}`}
+                              >
+                                {getButtonText(project.linkType)}
+                              </Card.Link>
+                            )}
                         </div>
                       </Card.Body>
                     </Card>
