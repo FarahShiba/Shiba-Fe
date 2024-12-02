@@ -5,10 +5,10 @@ import { Tab, Tabs, Card, Row, Col } from "react-bootstrap";
 import Work1 from "../../assets/marketing.jpg";
 import Work2 from "../../assets/Screenshot 2024-12-02 at 7.19.18 pm.png";
 // import Work3 from "../../assets/Logo Restaurant.png";
-import Work4 from "../../assets/ui.png";
 import Work5 from "../../assets/Screenshot 2024-12-02 at 7.27.11 pm.png";
 import Work6 from "../../assets/work6.png";
 import Work7 from "../../assets/work7.png";
+import Work8 from "../../assets/work8.png";
 
 import style from "./Portfolio.module.scss";
 import useTheme from "../../hooks/useTheme";
@@ -48,7 +48,7 @@ const Portfolio = () => {
 
     {
       id: 4,
-      image: Work4,
+      image: Work8,
       title: "Ui/Ux",
       category: "design",
       linkType: "figma",
