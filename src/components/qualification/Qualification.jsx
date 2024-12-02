@@ -94,7 +94,7 @@ const Qualification = () => {
                             <Card.Subtitle className="mb-2 text-muted">
                               Australia - Holmesglen Institute of Technology
                             </Card.Subtitle>
-                            <Card.Text>2024 - Present</Card.Text>
+                            <Card.Text>Feb 2024 - Nov 2024</Card.Text>
                           </div>
                         </Card.Body>
                       </Card>
@@ -155,7 +155,7 @@ const Qualification = () => {
                               Australia - Practice website and design on my
                               Campus.
                             </Card.Subtitle>
-                            <Card.Text>2023 - Present</Card.Text>
+                            <Card.Text>Feb 2024 - Nov 2024</Card.Text>
                           </div>
                         </Card.Body>
                       </Card>

@@ -10,6 +10,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Error from "./components/Error";
+// import "boxicons/css/boxicons.min.css";
 import "boxicons/css/boxicons.min.css";
 
 function App() {

@@ -125,17 +125,20 @@ const Portfolio = () => {
                           {project.title}
                         </Card.Title>
                         <div className="card_actions">
-                          <Card.Link
-                            target="_blank"
-                            href={project.livePreviewUrl}
-                            className="btn_ btn-live"
-                          >
-                            Live Preview
-                          </Card.Link>
+                          {/* Only show Live Preview if the title is not "Branding" */}
+                          {project.title !== "Branding" && (
+                            <Card.Link
+                              target="_blank"
+                              href={project.livePreviewUrl}
+                              className="btn_ btn-live"
+                            >
+                              Live Preview
+                            </Card.Link>
+                          )}
                           <Card.Link
                             target="_blank"
                             href={getLinkURL(project.linkType)}
-                            className={"btn_ btn-all btn${project.linkType}"}
+                            className={`btn_ btn-all btn-${project.linkType}`}
                           >
                             {getButtonText(project.linkType)}
                           </Card.Link>

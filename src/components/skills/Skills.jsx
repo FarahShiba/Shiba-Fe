@@ -14,7 +14,7 @@ const Skills = () => {
         <Container>
           <h2 className={`section-title ${style.darkText}`}>Skills</h2>
           <span className={`section-subtitle ${style.darkText} `}>
-            My technical level
+            Tools & Technologies
           </span>
 
           <Row className="justify-content-center mb-5">

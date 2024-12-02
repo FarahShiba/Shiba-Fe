@@ -45,11 +45,11 @@ const Contact = () => {
                 <Card className="contact_card">
                   <Card.Body>
                     <Card.Title>Email</Card.Title>
-                    <Card.Text>user@gmail.com</Card.Text>
+                    <Card.Text>tambunanfarahshiba@gmail.com</Card.Text>
                     <Button
-                      target="_blank"
                       className="btn-custom"
-                      href="https://mail.google.com/mail/u/0/?ogbl#inbox"
+                      target="_blank"
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=tambunanfarahshiba@gmail.com&su=Let's%20Connect&body=Hi%20Farah,%0D%0A%0D%0AI'd%20like%20to%20connect%20with%20you%20regarding%20a%20project.%0D%0A%0D%0AThanks!"
                     >
                       Write Me
                     </Button>

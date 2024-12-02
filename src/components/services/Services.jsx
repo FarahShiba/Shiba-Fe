@@ -8,9 +8,46 @@ const Services = () => {
   const { theme } = useTheme();
 
   const services = [
-    { id: 1, title: "Web Developer", icon: "bx-laptop" },
-    { id: 2, title: "UI/UX", icon: "bx-paint" },
-    { id: 3, title: "Marketing", icon: "bx-image" },
+    {
+      id: 1,
+      title: "Front-End & Back-End Developer",
+      icon: "bx-laptop",
+      description:
+        "Delivering impactful web development solutions through hands-on academic projects and volunteer experience, focusing on responsive designs, user engagement, and effective accessibility improvements.",
+      details: [
+        "Designed and implemented responsive web layouts to enhance navigation and user experience.",
+        "Built dynamic web applications with interactive and user-friendly interfaces.",
+        "Improved accessibility and usability by aligning designs with web standards and best practices.",
+        "Developed prototypes and mockups using Figma to streamline design and development processes.",
+        "Integrated branding and design principles into web projects to meet user-centric objectives.",
+      ],
+    },
+    {
+      id: 2,
+      title: "UI/UX",
+      icon: "bx-paint",
+      description:
+        "Specialized in creating user-centered designs that enhance user experience.",
+      details: [
+        "Conducted user research to understand user needs and preferences.",
+        "Designed wireframes, prototypes, and high-fidelity mockups using Figma.",
+        "Improved usability through user testing and iterative design processes.",
+        "Created visually appealing and functional user interfaces.",
+        "Collaborated with developers to ensure design implementation fidelity.",
+      ],
+    },
+    {
+      id: 3,
+      title: "Branding",
+      icon: "bx-image",
+      description:
+        "Crafting cohesive branding strategies to establish strong visual identities.",
+      details: [
+        "Developed brand guidelines for consistent visual and messaging elements.",
+        "Designed logos, typography, and color schemes for brand identity.",
+        "Created marketing materials, including brochures and social media graphics.",
+      ],
+    },
   ];
 
   const toggleTab = (index) => {
@@ -21,9 +58,11 @@ const Services = () => {
     <div className={`${style[theme]}`}>
       <section className={`services section ${style.services}`} id="services">
         <Container>
-          <h2 className={`section__title ${style.darkText}`}>Services</h2>
+          <h2 className={`section__title ${style.darkText}`}>
+            Skills and Expertise
+          </h2>
           <span className={`section__subtitle ${style.darkText}`}>
-            What I offer
+            What I Bring to the Table
           </span>
 
           <Row className="justify-content-md-center">
@@ -47,7 +86,6 @@ const Services = () => {
                   View More
                   <i className="bx bx-chevron-right services_button-icon"></i>
                 </Button>
-
                 <Modal
                   show={toggleState === service.id}
                   onHide={() => toggleTab(0)}
@@ -62,48 +100,25 @@ const Services = () => {
                       {service.title}
                     </Modal.Title>
                   </Modal.Header>
-                  <Modal.Body>
-                    <p>
-                      Service with more than 3 years of experience. Providing
-                      quality work to clients and companies.
-                    </p>
 
-                    <ListGroup
-                      variant="flush"
-                      className="services_modal-services"
-                    >
-                      <ListGroup.Item className="services_modal-service">
-                        <i className="bx bx-check-circle services_modal-icon"></i>
-                        <span className="services_modal-info">
-                          I develop the user interface.
-                        </span>
-                      </ListGroup.Item>
-                      <ListGroup.Item className="services_modal-service">
-                        <i className="bx bx-check-circle services_modal-icon"></i>
-                        <span className="services_modal-info">
-                          Web page development.
-                        </span>
-                      </ListGroup.Item>
-                      <ListGroup.Item className="services_modal-service">
-                        <i className="bx bx-check-circle services_modal-icon"></i>
-                        <span className="services_modal-info">
-                          I create UX element interactions.
-                        </span>
-                      </ListGroup.Item>
-                      <ListGroup.Item className="services_modal-service">
-                        <i className="bx bx-check-circle services_modal-icon"></i>
-                        <span className="services_modal-info">
-                          I position your company brand.
-                        </span>
-                      </ListGroup.Item>
-                      <ListGroup.Item className="services_modal-service">
-                        <i className="bx bx-check-circle services_modal-icon"></i>
-                        <span className="services_modal-info">
-                          Design and mockups of products for companies.
-                        </span>
-                      </ListGroup.Item>
-                    </ListGroup>
+                  <Modal.Body>
+                    <p>{service.description}</p>
                   </Modal.Body>
+
+                  <ListGroup
+                    variant="flush"
+                    className="services_modal-services"
+                  >
+                    {service.details.map((detail, index) => (
+                      <ListGroup.Item
+                        key={index}
+                        className="services_modal-service"
+                      >
+                        <i className="bx bx-check-circle services_modal-icon"></i>
+                        <span className="services_modal-info">{detail}</span>
+                      </ListGroup.Item>
+                    ))}
+                  </ListGroup>
                 </Modal>
               </Col>
             ))}

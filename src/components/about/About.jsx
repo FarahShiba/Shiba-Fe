@@ -2,7 +2,7 @@ import React from "react";
 import Info from "./Info";
 import { Button, Container, Row, Col, Image } from "react-bootstrap";
 import AboutImg from "../../assets/about.jpeg";
-import CV from "../../assets/FarahS-Tambunan-CV.pdf";
+import CV from "../../assets/CV & Cover Letter (1).pdf";
 import style from "./About.module.scss";
 import useTheme from "../../hooks/useTheme";
 
